@@ -1,6 +1,6 @@
-- name: first workflow
-  on: push
-  jobs:
+name: first workflow
+on: push
+jobs:
     my_first_job:
       runs-on: ubuntu-latest
       steps: 
