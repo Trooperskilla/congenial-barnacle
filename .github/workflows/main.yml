@@ -1,0 +1,14 @@
+name: first workflow
+on: push
+jobs:
+    my_first_job:
+      runs-on: ubuntu-latest
+      steps: 
+      - name: Download current branch to the runner 
+        uses: actions/checkout@v5
+      - name: display welcome message
+        run: echo "welcome to github acions"
+      - name: list the repo files
+        run: ls 
+      - name: open the readmefile
+        run: cat README.md  
