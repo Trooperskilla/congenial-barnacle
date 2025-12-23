@@ -1,0 +1,14 @@
+name: list the file systems on the runner
+on: push 
+jobs:
+  check-file-system:
+     runs-on: ubuntu-latest
+     steps:
+     - name: display message
+       run: echo welcome to the second workflow
+     - name: checkout
+       uses: actions/checkout@v5
+     - name: display text file
+       run: cat newfile.txt
+     
+     
