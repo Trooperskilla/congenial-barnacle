@@ -7,7 +7,7 @@ jobs:
      - name: display message
        run: echo welcome to the second workflow
      - name: fs list
-       run: run df -h
+       run: run df -k
        
      - name: checkout
        uses: actions/checkout@v5
