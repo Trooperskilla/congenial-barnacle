@@ -1,5 +1,5 @@
 name: list the file systems on the runner
-on: push 
+
 jobs:
   check-file-system:
      runs-on: ubuntu-latest
